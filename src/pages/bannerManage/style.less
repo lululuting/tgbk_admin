@@ -1,0 +1,262 @@
+@import '~antd/es/style/themes/default.less';
+
+.formModal {
+  :global {
+    .ant-upload.ant-upload-drag {
+      border: 0;
+    }
+
+    .ant-upload.ant-upload-drag .ant-upload {
+      padding: 0;
+    }
+
+    .ant-upload-select-picture-card i {
+      font-size: 32px;
+      color: #999;
+    }
+
+    .ant-upload-select-picture-card .ant-upload-text {
+      margin-top: 8px;
+      color: #666;
+    }
+  }
+}
+
+.bannerManage {
+  :global {
+    .ant-card-head-title {
+      overflow: visible;
+    }
+
+    .ant-card-head {
+      border-bottom: none;
+    }
+
+    .ant-radio-group {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .ant-upload.ant-upload-drag {
+      border: 0;
+    }
+
+    .ant-upload.ant-upload-drag .ant-upload {
+      padding: 0;
+    }
+
+  }
+
+  .bannerView {
+    display: flex;
+    justify-content: center;
+
+    .bannerItem {
+      background-size: cover;
+      background-position: 50% 50%;
+      cursor: pointer;
+    }
+
+    :global {
+      .ant-carousel {
+        width: 400px !important;
+      }
+
+      .ant-carousel .slick-slide {
+        text-align: center;
+        height: 200px;
+        line-height: 200px;
+        background: #364d79;
+        overflow: hidden;
+      }
+
+      .ant-carousel .slick-slide h3 {
+        color: #fff;
+      }
+
+    }
+
+    .leftBanner {
+      .bannerItem {
+        height: 200px;
+      }
+    }
+
+
+    .rightBanner {
+      width: 150px;
+      margin-left: 10px;
+
+      .bannerItem {
+        width: 150px;
+        height: 95px;
+        display: block;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+
+        .bannerText {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, .2);
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, .2);
+          line-height: 2;
+          font-size: 10px;
+          color: #fff;
+          padding: 0 10px;
+          font-weight: bold;
+          letter-spacing: .5px;
+          z-index: 999;
+        }
+      }
+
+      .bannerItem:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+
+  .otherBanner {
+    .bannerItem {
+      width: 150px;
+      height: 95px;
+      display: block;
+      margin-bottom: 10px;
+      overflow: hidden;
+      position: relative;
+
+      background-size: cover;
+      background-position: 50% 50%;
+      cursor: pointer;
+
+      .bannerText {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .2);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, .2);
+        line-height: 2;
+        font-size: 10px;
+        color: #fff;
+        padding: 0 10px;
+        font-weight: bold;
+        letter-spacing: .5px;
+        z-index: 999;
+      }
+    }
+
+    .bannerItem:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  .typeBox {
+    border-right: 1px solid @border-color-split;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .typeTitle {
+    font-size: 18px;
+  }
+
+  .typeNum {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .listCard {
+    :global {
+      .ant-card-head-title {
+        overflow: visible;
+      }
+
+      .ant-card-head {
+        border-bottom: none;
+      }
+
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .ant-avatar {
+        width: 72px;
+        height: 47px;
+      }
+    }
+
+
+    .listContent {
+      font-size: 0;
+
+      .listContentItem {
+        display: inline-block;
+        text-align: right;
+        margin-left: 40px;
+        color: @text-color-secondary;
+        font-size: @font-size-base;
+        vertical-align: middle;
+
+        :global {
+          .ant-badge-status-text {
+            color: @text-color-secondary;
+            font-size: @font-size-base;
+          }
+        }
+
+        >span {
+          line-height: 20px;
+        }
+
+        >a {
+          display: block;
+          margin-top: 4px;
+          margin-bottom: 0;
+          line-height: 22px;
+        }
+
+        >p {
+          margin-top: 4px;
+          margin-bottom: 0;
+          line-height: 22px;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+@media screen and (max-width: @screen-xs) {
+  .bannerManage {
+    :global {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+
+      .ant-list-item-action {
+        margin-left: 0;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,72 @@
+
+@import '~antd/es/style/themes/default.less';
+
+.articleList {
+  :global {
+    .ant-list-item:first-child {
+      padding-top: 0;
+    }
+    .ant-list-item:hover .ant-list-item-action li{
+      &:last-child{
+        display: inline-block;
+      }
+    }
+
+    .ant-list-item-action li{
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+}
+a.listItemMetaTitle {
+  color: @heading-color;
+}
+
+
+
+
+.listContent {
+  .description {
+    max-width: 720px;
+    line-height: 22px;
+  }
+  .extra {
+    margin-top: 16px;
+    color: @text-color-secondary;
+    line-height: 22px;
+    & > :global(.ant-avatar) {
+      position: relative;
+      top: 1px;
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      vertical-align: top;
+    }
+    & > em {
+      margin-left: 16px;
+      color: @disabled-color;
+      font-style: normal;
+    }
+  }
+}
+
+  .itemCover{
+    width: 180px;
+    height: 120px;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+
+@media screen and (max-width: @screen-xs) {
+  .listContent {
+    .extra {
+      & > em {
+        display: block;
+        margin-top: 8px;
+        margin-left: 0;
+      }
+    }
+  }
+}

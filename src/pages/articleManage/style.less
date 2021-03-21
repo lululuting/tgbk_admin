@@ -1,0 +1,136 @@
+@import '~antd/es/style/themes/default.less';
+
+
+.articList {
+
+  :global{
+    .ant-list-item-action {
+      display: flex;
+      justify-content: center;
+      min-width: 80px;
+    }
+    .ant-list-item-meta-description{
+      word-break:break-all;
+    }
+  }
+
+
+  .typeBox {
+    border-right: 1px solid @border-color-split;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .typeTitle {
+    font-size: 18px;
+  }
+
+  .typeNum {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .listCard {
+    :global {
+      .ant-card-head-title {
+        overflow: visible;
+      }
+
+      .ant-card-head {
+        border-bottom: none;
+      }
+
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .ant-avatar{
+        width: 72px;
+        height: 47px;
+      }
+      
+      .ant-list-item-meta-description{
+        min-width: 180px;
+      }
+    }
+
+
+    .listContent {
+      font-size: 0;
+
+    
+      .listContentItem {
+        display: inline-block;
+        text-align: right;
+        margin-left: 40px;
+        color: @text-color-secondary;
+        font-size: @font-size-base;
+        vertical-align: middle;
+        
+        :global {
+          .ant-badge-status-text {
+            color: @text-color-secondary;
+            font-size: @font-size-base;
+          }
+        }
+       
+        >span {
+          line-height: 20px;
+        }
+
+        >a {
+          display: block;
+          margin-top: 4px;
+          margin-bottom: 0;
+          line-height: 22px;
+        }
+
+        >p {
+          margin-top: 4px;
+          margin-bottom: 0;
+          line-height: 22px;
+        }
+      }
+    }
+
+  }
+}
+
+
+
+@media screen and (max-width: @screen-md) {
+  .articList {
+    :global {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+
+      .ant-list-item-action {
+        margin-left: 0;
+      }
+    }
+
+    .listContent {
+      margin-left: 0;
+      display: none;
+
+      &>div {
+        margin-left: 0;
+      }
+    }
+
+    .listCard {
+      :global {
+        .ant-card-head-title {
+          overflow: visible;
+        }
+       
+      }
+    }
+  }
+}
