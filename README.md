@@ -1,4 +1,4 @@
-
+## 2022.02.09 后管系统在下个版本作废，功能将合并到前台主站。
 ## 后台管理系统
 
 ![avatar](https://github.com/lululuting/pic/blob/master/preview/%E5%90%8E%E5%8F%B0.png?raw=true)
